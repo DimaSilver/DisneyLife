@@ -32,7 +32,7 @@
     &::before{
       content: "";
       position: absolute;
-      border-radius: 30px;
+      border-radius: 25px;
       width: 80px;
       height: 10px;
       background-color: #ffca2a;
@@ -63,7 +63,7 @@
       transform: translateY(-50%);
       height: 10px;
       background-color: #5f94ff;
-      border-radius: 30px;
+      border-radius: 25px;
     }
   }
   &__bottom-btn__link{
@@ -103,12 +103,38 @@
   }
 }
 .benefits{
+  position: relative;
+  &__bg-image{
+    position: absolute;
+    right: 53px;
+    top: -285px;
+  }
   &__top{
     text-align: center;
   }
   &__title{
     font-size: 50px;
     line-height: 52px;
+    padding-top: 90px;
+    position: relative;
+    &::before,
+    &::after{
+      position: absolute;
+      content: "";
+      top: 0;
+      height: 10px;
+      border-radius: 25px;
+    }
+    &::before{
+      width: 40px;
+      background-color: #ff4b64;
+      left: 570px;
+    }
+    &::after{
+      width: 80px;
+      background-color: #5f94ff;
+      right: 570px;
+    }
   }
   &__text{
     font-size: 20px;
@@ -174,6 +200,9 @@
     padding: 21px 40px;
     color: #fff;
     background-color: #5f94ff;
+    &:hover{
+      background-color: #9ecb45;
+    }
   }
   &__btn{
     display: flex;
@@ -185,7 +214,72 @@
     color: #d7d4cd;
   }
 }
+.trial{
+  margin-top: 75px;
+  background-image: url('../images/trial-bg.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 
+  position: relative;
+  &__bg-image{
+    position: absolute;
+    top: -215px;
+    left: 157px;
+  }
+  &__textarea{
+    max-width: 373px;
+    padding: 140px 0 160px;
+    color: #fff;
+  }
+  &__title{
+    @extend %gotham-light;
+    font-size: 50px;
+    line-height: 55px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      height: 10px;
+      width: 80px;
+      background-color: #ff4b64;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 25px;
+      left: -110px;
+    }
+  }
+  &__title-span{
+    @extend %gotham-bold;
+  }
+  &__descr{
+    margin-top: -33px;
+  }
+  &__btn{
+     margin-top: 53px;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: "";
+      border-radius: 25px;
+      width: 40px;
+      height: 10px;
+      background-color: #ffca2a;
+      left: 230px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__btn-link{
+    padding: 21px 43px 22px 42px;
+    background-color: #fff;
+    color: #9ecb45;
+    &:hover{
+      color: #fff;
+      background-color: #5f94ff;
+    }
+  }
+}
 
 
 
