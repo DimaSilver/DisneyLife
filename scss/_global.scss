@@ -20,8 +20,31 @@ li{
 }
 a{
   text-decoration: none;
+  display: inline-block;
   color: inherit;
 }
 body{
   @extend %gotham-medium;
+  color: #fff;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: -0.4px;
+}
+.container{
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.btn{
+  letter-spacing: 2px;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 14px rgba(0,0,0,.1);
+  transition: all .3s;
+}
+.title{
+  @extend %gotham-bold;
+  color: #000;
 }
