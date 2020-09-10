@@ -11,6 +11,7 @@ h4,
 h5,
 h6{
   font-size: inherit;
+  line-height: inherit;
 }
 ul,
 li{
@@ -25,7 +26,7 @@ a{
 }
 body{
   @extend %gotham-medium;
-  color: #fff;
+  color: #000;
   font-size: 17px;
   line-height: 21px;
   letter-spacing: -0.4px;
@@ -47,4 +48,8 @@ body{
 .title{
   @extend %gotham-bold;
   color: #000;
+}
+.descr{
+  font-size: 14px;
+  line-height: 16px;
 }
