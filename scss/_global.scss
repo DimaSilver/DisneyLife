@@ -53,3 +53,13 @@ body{
   font-size: 14px;
   line-height: 16px;
 }
+.text{
+  color: #918f89;
+}
+.tabs-content {
+  opacity: 0;
+  transition: opacity .3s;
+  &.tabs-content--active{
+    opacity: 1;
+  }
+}
