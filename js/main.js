@@ -14,5 +14,7 @@ $(function(){
        $($(this).attr('href')).addClass('tabs-content--active');
        $('.types__content-slider').slick('setPosition');
     });
-
+    $('.footer__list').on('click', '.footer__list-item',  function(){
+        $(this).addClass('footer__list-item--active').siblings().removeClass('footer__list-item--active')
+    });
 });

@@ -45,6 +45,12 @@ body{
   box-shadow: 0 8px 14px rgba(0,0,0,.1);
   transition: all .3s;
 }
+.section__image-bg{
+  position: relative;
+}
+.block__bg-image{
+  position: absolute;
+}
 .title{
   @extend %gotham-bold;
   color: #000;
