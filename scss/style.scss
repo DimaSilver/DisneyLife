@@ -798,7 +798,20 @@
 .footer__list-item.footer__list-item--active{
   color: #fff;
 }
-
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .header{
+    margin-bottom: 160px;
+  }
+  .types{
+    display: none;
+  }
+  .footer__inner{
+    max-width: 1055px;
+  }
+  .footer__image-bg{
+    top: -250px;
+  }
+}
 
 
 @keyframes fade{
