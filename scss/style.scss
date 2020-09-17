@@ -102,6 +102,37 @@
       color: #fff;
     }
   }
+  &__mobile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 300px;
+    background-color: #fa4a62;
+    padding: 20px 15px;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    transition: all .3s;
+    transform: translateX(-100%);
+    z-index: 5;
+  }
+  &__btn{
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    top: 80px;
+    display: none;
+    div{
+      width: 40px;
+      height: 2px;
+      background-color: #000000;
+      margin-top: 10px;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
 }
 .benefits{
   &__image-bg{
@@ -162,7 +193,8 @@
     }
     &::before{
       bottom: 5px;
-      width: 840px;
+      max-width: 840px;
+      width: 100%;
       height: 2px;
     }
     &::after{
@@ -178,6 +210,7 @@
   &__bottom-inner{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__bottom-list__item{
     @extend %gotham-book;
@@ -328,6 +361,7 @@
     max-width: 1280px;
     margin: 65px auto 0;
     position: relative;
+    flex-wrap: wrap;
     &::before,
     &::after {
       content: "";
